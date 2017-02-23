@@ -11,7 +11,7 @@ boton.addEventListener('click',function datos(event){
   if(general[0].value.length==0||general[1].value.length==0||general[2].value.length==0||general[3].value.length==0){
     window.alert('Falta completar');
   } else {
-    resultados.innerHTML+="<ul>"+
+    resultados.innerHTML="<ul>"+
       "<li> Nombre: "+ nombre.value+"</li>"+
       "<li> Apellido: " + apellido.value+"</li>"+
       "<li> DNI: " + dni.value+"</li>"+
