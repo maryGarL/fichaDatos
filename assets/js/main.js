@@ -18,4 +18,5 @@ boton.addEventListener('click',function datos(event){
       "<li> Direccion: " + direccion.value+"</li>"+
     "</ul>"
   };
+  document.getElementById("todo").reset()
 });

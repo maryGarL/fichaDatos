@@ -7,7 +7,7 @@
   <title>Ficha de Datos</title>
 </head>
 <body>
-  <form>
+  <form id="todo">
     <div class="">
       <label for="">Ingresa tu nombre: </label>
       <input class="lleno" type="text" name="name" value="" id="name" required>
@@ -18,7 +18,7 @@
     </div><br>
     <div class="">
 	    <label for=""> tu DNI: </label>
-      <input class="lleno"type="text" name="" value="" id="identifier" required="Ingrese un valor válido" pattern="[0-9]s" maxlength="8" onkeypress="if(event.keycode<45 || event.keycode>57) event.returnValue = false;">
+    <input  class="lleno" type="text" id="identifier" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
     </div><br>
     <div class="">
       <label for="">Ingresa tu direccion: </label>
